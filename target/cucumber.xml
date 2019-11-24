@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="91.805433">
+<testcase classname="hudlHomePageTests" name="User logs into hudl coach page successfully" time="28.4129">
+<system-out><![CDATA[Given user is on Hudl login page............................................passed
+When the user enters "jahed04368@gmail.com" and "Passw0rd"..................passed
+And clicks login............................................................passed
+And User is shown their homepage............................................passed
+And user searches for "Liverpool"...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="hudlHomePageTests" name="User logs into hudl coach page successfully and watches a video" time="21.608274">
+<system-out><![CDATA[Given user is on Hudl login page............................................passed
+When the user enters "jahed04368@gmail.com" and "Passw0rd"..................passed
+And clicks login............................................................passed
+And User is shown their homepage............................................passed
+Then user watches a video and logs out......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="testfile" name="User logs into hudl coach page with invalid username and password" time="11.663415">
+<system-out><![CDATA[Given user is on Hudl login page............................................passed
+When the user enters "hudltesting@gmail.com" and "fakePassword".............passed
+And clicks login............................................................passed
+Then User is shown error message............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="testfile" name="user signs up to Hudl with a new team" time="30.120844">
+<system-out><![CDATA[Given user is on sign up page...............................................passed
+And user enters about organization..........................................passed
+And user selects sport......................................................passed
+And user selects their package..............................................passed
+And user enters relevant information........................................passed
+Then user is redirected to homepage.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
